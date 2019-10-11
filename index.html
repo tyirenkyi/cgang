@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CGANG</title>
+        <title>CGANG | Official Website</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
@@ -19,36 +19,420 @@
         <!-- External CSS-->
         <link rel="stylesheet" type="text/css" href="index.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito:800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function on() {
+              document.getElementById("overlay").style.display = "block";
+            }
+
+            function off() {
+              document.getElementById("overlay").style.display = "none";
+            } 
+
+            function openMenu() {
+              document.getElementById("menu-overlay").style.display = "block";
+            }
+
+            function closeMenu() {
+              document.getElementById("menu-overlay").style.display = "none";
+            }
+
+            window.addEventListener("load", event => {
+              document.getElementById("menu").addEventListener("click", openMenu)
+              document.getElementById("close-menu").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link2").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link3").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link4").addEventListener("click", closeMenu)
+              document.getElementById("close").addEventListener("click", off)
+              document.getElementById("play-video").addEventListener("click", on);
+            })
+            
+            function playVideo() {
+              var video = document.getElementById("myVideo")
+              video.setAttribute("autoplay", true)
+            }
+
+        </script>
     </head>
     <body>
-        <div class="bg-img">
-            <div class="container-view">
-                <div class="nav navBar">
-                    <span class="nav-item col-md-3 offset-md-2">
-                        <img 
-                            src="./assets/images/cganglogo.jpg"
-                            class="cgang"
-                        />
-                    </span>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">MUSIC + VIDEOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link link" href="#">ARTISTS</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link link" href="#">BOOKING</a>
-                    </li>
-                    <span class="nav-item album">
-                        <a class="nav-link album-text" href="#">GREEN</a>
-                    </span>
-                </div>
-            </div>
+      <video muted id="myVideo" loop autoplay>
+          <source src="./assets/videos/My Video1.mp4" type="video/mp4">
+      </video>
+      <div class="container-view">
+        <div class="navBar">
+          <span class="col-md-3 offset-md-0">
+            <p class="cgang">Christian Gang</p>
+          </span>
+          <ul>
+            <li class="nav-item">
+              <a class="link" href="musicnvideos.html">MUSIC + VIDEOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#artists">ARTISTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#booking">BOOKING</a>
+            </li>
+          </ul>
+          <span class="nav-item album">
+            <a class="album-text" href="#green-section">GREEN</a>
+          </span>
         </div>
-        <iframe src="https://open.spotify.com/embed/album/6u0K5m6nmrDAashJwl9zen" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <div class="container-view2">
+        <span class="">
+          <p class="cgang">Christian Gang</p>
+        </span>
+        <i 
+          id="menu"
+          class="fa fa-bars menu">
+        </i>
+        <div id="menu-overlay">
+          <span 
+            style="width: 100%;
+              display: flex;
+              justify-content: center;">
+            <i id="close-menu" class="fa fa-close menu"></i>
+            <span class="menu-items">
+              <p class="overlay-album">Green</p>
+              <a id="overlay-link" href="https://fanlink.to/GREEN">
+                <p class="overlay-link">Buy Now</p>
+              </a>
+              <a id="overlay-link1" href="#">
+                <p class="overlay-link1">Music + Videos</p>
+              </a>
+              <a id="overlay-link2" href="#about">
+                <p class="overlay-link1">About</p>
+              </a>
+              <a id="overlay-link3" href="#artists">
+                <p class="overlay-link1">Artists</p>
+              </a>
+              <a id="overlay-link4" href="#booking">
+                <p class="overlay-link1">Booking</p>
+              </a>
+            </span>
+          </span>
+          
+        </div>
+      </div>
+      
+      <div style="width: 100%; height: 74vh; position: relative" class="news-view">
+        <div class="news-container">
+          <h3 class="news3 offset-md-2">NEW SINGLE + NEW ALBUM</h3>
+          <h1 class="news1 offset-md-2">GREEN</h1>
+          <span class="news2-view offset-md-2">
+            <h2 class="news2 offset-md-2">
+              CYPAQ & KIDDFRESH - WHICH SIDE
+            </h2>
+          </span>
+        </div>
+      </div>
+      <div class="new-music">
+        <div class="music-card">
+          <img 
+            src="assets/images/which-side.jpg"
+            class="art"
+          />
+          <div class="music-div">
+            <h1 class="title">WHICH SIDE</h1>
+            <br>
+            <br>
+            <a href="https://hypeddit.com/track/ig1iyc" target="_blank">
+              <span class="options3">
+                <p class="options3-text">DOWNLOAD FREE</p>
+                <i class="fa fa-long-arrow-right options-icon"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section id="green-section">
+        <div class="new-music">
+          <div class="music-card">
+            <img 
+              src="assets/images/green.jpg"
+              class="art"
+            />
+            <div class="music-div">
+              <h1 class="title">GREEN</h1>
+              <br>
+              <br>
+              <p class="metadata">Available everywhere</p>
+              <p class="metadata">Green | Released 6th October 2018.</p>
+              <a href="https://fanlink.to/GREEN" target="_blank">
+                <span class="options">
+                  <p class="options-text">BUY NOW</p>
+                  <i class="fa fa-long-arrow-right options-icon"></i>
+                </span>
+              </a>
+              <a href="http://ghanabamuses.blogspot.com/2018/10/green-album-more-than-collection-of.html" target="_blank">
+                <span class="options1">
+                  <p class="options1-text">LEARN MORE ABOUT GREEN</p>
+                  <i class="fa fa-long-arrow-right options-icon"></i>
+                </span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="display: flex; 
+          justify-content: center;
+          align-content: center
+        "
+      >
+        <div id="video-container">
+          <img
+            id="play-video"
+            src="assets/images/outline_play_circle_outline_white_48dp.png"
+          ></img>
+          
+        </div>
+      </section>
+      <div id="overlay">
+          <span class="icon">
+            <i id="close" class="fa fa-close" style="color: aliceblue"></i>
+          </span>
+          <div class="video-view">
+            <iframe 
+              class="video"
+              src="https://www.youtube.com/embed/LAxgnEYfqrk" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      <section id="artists">
+        <div class="about-1">
+          <img 
+            class="about-image"
+            src="assets/images/cynchaincolor.jpg"
+          />
+          <span class="about-text">
+            <div class="wrapper">
+                <h1 class="glitch">CYPAQ</h1>
+            </div>
+            <div class="about">
+              
+              <p class="text1 offset-md-2">
+                Cyril Quansah aka Cypaq is a hip hop artist dedicated to the experimentation
+                 of music and freedom to create. Cypaq's music career started off in 2014 after
+                  performing in high school to a bunch of friends in his school's dining hall, 
+                  dominantly known as a rapper at that time. 
+                  <br>
+                  <br>
+                  Cypaq's first releases were duo singles 
+                  with mate Snek.B which were 'What They Can't' and '3 Rounds' which were released 
+                  in 2016. In 2017 Cypaq went on to release his first solo single 'Another Hope Song' 
+                  which paved the way to create the type of artist he is today, 2017 also saw two more 
+                  singles from Cypaq 'Over Do It' and 'Cold', the latter which went on to have about 
+                  10,000 streams across all platforms. 
+                  <br>
+                  <br>
+                  Cypaq has performed twice at one of Ghana's most
+                   famous venues namely; The National Theatre. 2018 is seen as a very dominant year for 
+                   Cypaq because he released a total of 14 songs that year with 6 of them being singles 
+                   and the rest being in his 'Green' album.
+                   <br><br>
+                   Green was released on 6th October 2018 and 
+                   charted in the Apple music Top 200 album Charts and went on to be streamed a total 
+                   of about 76,000 on just Soundcloud, Apple Music, Spotify and Youtube.
+              </p>
+              <span class="icons">
+                  <a href="https://soundcloud.com/cypaq" target="_blank">
+                    <i class="fa fa-soundcloud" style="color: #FF3D00" id="icon"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCb-sjS_Agdipf3pBA1prI7A" target="_blank">
+                    <i class="fa fa-youtube" style="color: crimson" id="icon"></i>
+                  </a>
+                  <a href="https://www.instagram.com/cypaq/" target="_blank">
+                    <i class="fa fa-instagram" style="color: #D500F9" id="icon"></i>
+                  </a>
+                  <a href="https://twitter.com/thecypaq" target="_blank">
+                    <i class="fa fa-twitter" style="color:#1976D2" id="icon"></i>
+                  </a>
+                  <a href="https://itunes.apple.com/us/artist/cypaq/id1222975035" target="_blank">
+                    <i class="fa fa-apple" style="color: gray" id="icon"></i>
+                  </a>
+                  <a href="https://open.spotify.com/artist/0qtXMXS8YFH0brVOrfnUqb" target="_blank">
+                    <i class="fa fa-spotify" style="color:#43A047" id="icon"></i>
+                  </a>
+                  <a href="https://www.facebook.com/cypaq" target="_blank">
+                    <i class="fa fa-facebook" style="color: #303F9F" id="icon"></i>
+                  </a>
+                </span>
+            </div>
+            </div>
+          </span>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-2">
+          <img 
+            class="about-image1"
+            src="assets/images/cgang5.jpg"
+          />
+          
+          <span class="about-text">
+            <div class="wrapper2">
+                <h1 class="glitch" data-wrapper="CGANG">CGANG</h1>
+            </div>
+            <div class="about1">
+              
+              <p 
+              class="text2 offset-md-2">
+              Christian Gang is a collection of creatives and a 
+              possible movement that stands for the freedom of creation
+                of art with christian boundaries. 
+                <br><br>
+                Christian Gang stands on the bible verse Matthew 28:19-20; which says 
+                'Go ye therefore and teach all nations baptizing them in the name of the Father
+                 and of the Son and of the Holy Ghost. Teaching them to observe all things whatsoever
+                  I have commanded you: and, lo I am with you alway even onto the end of the world, Amen'
+                <br><br>
+  
+                C Gang was created in 2014
+                when Cypaq was in high school with its first release being 'Intro' 
+                by Mad For Christ (MFC) which was a collection of artists Snek.B, 
+                Dapsi & Cypaq. MFC later broke apart which later led to the creation 
+                of Snek.B & Cypaq. 
+                <br><br>
+                The first official release under Christian Gang was
+                  'What They Can't' by Snek.B & Cypaq which was recieved well by the masses.
+                  Christian Gang was later home to artists such as Donaj,
+                    Bravol Forlany,Snek.B & Cypaq. 
+                    <br><br>
+                    Years later after a lot of
+                    succesful releases and projects some artists went onto their
+                      own paths which would see Christian Gang become home to just 
+                      one artist (Cypaq) and one act (Snek.B & Cypaq).
+              </p>
+              <span class="icons">
+                <a href="https://soundcloud.com/cgangstuff" target="_blank">
+                  <i class="fa fa-soundcloud" style="color: #FF3D00" id="icon"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCS8TntnISiud4e-MUJpt79w" target="_blank">
+                  <i class="fa fa-youtube" style="color: crimson" id="icon"></i>
+                </a>
+                <a href="https://www.instagram.com/cgangstuff/" target="_blank">
+                  <i class="fa fa-instagram" style="color: #D500F9" id="icon"></i>
+                </a>
+                <a href="https://twitter.com/CGangstuff" target="_blank">
+                  <i class="fa fa-twitter" style="color:#1976D2" id="icon"></i>
+                </a>
+                </span>
+            </div>
+          </span>
+        </div>
+      </section>
+      <div class="spotify-div">
+          <span class="play-1">
+            <img 
+              class="spotify-image"
+              id="green"
+              src="assets/images/green.jpg"
+            />
+            <iframe 
+              width="100%" 
+              height="500" 
+              scrolling="no" 
+              frameborder="no" 
+              allow="autoplay" 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/617552175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+          </span>
+          <span class="play-3">
+            <img 
+              class="spotify-image"
+              id="spill"
+              src="assets/images/cyril.jpg"
+            />
+            <iframe 
+              width="100%" 
+              height="500" 
+              scrolling="no" 
+              frameborder="no" 
+              allow="autoplay" 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/725795592&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>   
+          </span>
+          <span class="play-4">
+            <img 
+              class="spotify-image"
+              id="caked"
+              src="assets/images/snekncy.jpg"
+            />
+            <iframe 
+              width="100%" 
+              height="500" 
+              scrolling="no" 
+              frameborder="no" 
+              allow="autoplay" 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/643491591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+          </span>
+          <span class="play-2">
+            <img 
+              class="spotify-image"
+              id="complete-playlist"
+              src="assets/images/lite.jpg"
+            />
+            <iframe 
+              width="100%" 
+              height="166" 
+              scrolling="no" 
+              frameborder="no" 
+              allow="autoplay" 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560854287&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>        
+          </span>
+        </div>
+      <footer>
+        <section id="booking" class="booking">
+          <div class="booking-div">
+            <p class="text offset-md-1">
+              For booking information
+            </p>
+            <p class="text2 offset-md-1">
+              follow the link below
+            </p>
+            <a class="link offset-md-1" href="tel:0245428756" target="_parent">
+              <p class="link-text">Click Here</p>
+              <i class="fa fa-long-arrow-right options-icon" style="margin-top: 6px; color: #66BB6A"></i>
+            </a>
+            <p class="link-text1 offset-md-1">Email: cypaq23@gmail.com</p>
+            <hr class="offset-md-1" style="border-top: dotted 4px" />
+            <p class="dev-text offset-md-1" >Developed by t.o.y.Labs</p>
+            <span class="icons1 offset-md-1">
+              <a href="https://soundcloud.com/cgangstuff" target="_blank">
+                <i class="fa fa-soundcloud" style="color: #FF3D00" id="icon1"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCS8TntnISiud4e-MUJpt79w" target="_blank">
+                <i class="fa fa-youtube" style="color: crimson" id="icon"></i>
+              </a>
+              <a href="https://www.instagram.com/cgangstuff/" target="_blank">
+                <i class="fa fa-instagram" style="color: #D500F9" id="icon"></i>
+              </a>
+              <a href="https://twitter.com/CGangstuff" target="_blank">
+                <i class="fa fa-twitter" style="color:#1976D2" id="icon"></i>
+              </a>
+            </span>
+          </div>
+        </section>
+      </footer>
     </body>
 </html>

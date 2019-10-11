@@ -1,0 +1,25 @@
+.art {
+    width: 50vw;
+    height: 100vh;
+}
+
+.spotify {
+    
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+} 
+
+body {
+    margin: 0;
+}
+
+.spotify-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

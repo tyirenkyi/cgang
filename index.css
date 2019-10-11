@@ -1,46 +1,1022 @@
-.bg-img {
-    background-image: url("./assets/images/455928744_244006.jpg");
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+@-o-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
 
-    min-height: 100vh;
-    position: relative;
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+body {
+  background-color: #212121;
+  margin: 0px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bg-img {
+  background-image: url("./assets/images/cynchain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+  
+  position: relative;
 }
 
 .container-view {
-    position: absolute;
-    width: 1200px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .navBar {
-    padding-top: 60px;
-    align-items: center;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center
 }
 
 .cgang {
-    width: 100px;
-    height: 100px;
+  font-family: "Dancing Script", cursive;
+  color: aliceblue;
+  font-size: 30px;
 }
 
 
 .album {
-    display: flex;
-    width: 200px;
-    height: 60px;
-    background-color: greenyellow;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
+  display: flex;
+  width: 200px;
+  height: 60px;
+  background-color: #66BB6A;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }
 
 .link {
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(239, 243, 247);
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(239, 243, 247);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
+
 .album-text {
+  font-size: 20px;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace
+}
+
+#video-container {
+  background-image: url("./assets/images/switchuptv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  width: 80vw;
+  height: 100vh;
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+#video-container:hover {
+  transform: scale(1.1);
+}
+
+#play-video {
+  width: 100px; 
+  height: 100px; 
+  position: absolute; 
+  top: 300px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer; 
+}
+
+.icon {
+  position: fixed;
+  top: 10px;
+  right: 5px;
+}
+
+.video-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 70vw;
+  height: 70vh;
+  margin-top: 100px;
+}
+
+.spotify-div {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.play-1{
+  display: flex;
+  flex-direction: column;
+}
+
+.play-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-1 {
+  background-color:#212121;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.about-image {
+  height: 100vh;
+  width: 40vw;
+}
+
+.about-text {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+
+.text {
+  font-weight: bold;
+  font-family: 'Fira', sans;
+  color: #212121;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.text1 {
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  line-height: 1.4;
+  font-size: 14px;
+  width: 40vw;
+}
+
+.about {
+  width: 50vw;
+  display: flex;
+  align-content: center;
+  flex-direction: column
+}
+
+.wrapper {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.wrapper2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.wrapper h1.glitch {
+  color: white;
+  font-family: Ardenstine;
+  font-weight: 800;
+  position: relative;
+  font-size: 80px;
+  padding: 30px;
+}
+.wrapper h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: white;
+  content: "CYRIL";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#212121;
+  overflow: hidden;
+  top: 0;
+}
+
+.wrapper2 h1.glitch {
+  color: white;
+  font-family: Ardenstine;
+  font-weight: 800;
+  position: relative;
+  font-size: 80px;
+  padding: 30px;
+}
+.wrapper2 h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: white;
+  content: "CYRIL";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#212121;
+  overflow: hidden;
+  top: 0;
+}
+.wrapper2 h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: white;
+  content: "CGANG";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#212121;
+  overflow: hidden;
+  top: 0;
+}
+
+.wrapper2 h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper2 h1.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(117px, 350px, 132px, 30px);
+  }
+  5% {
+    clip: rect(34px, 350px, 35px, 30px);
+  }
+  10% {
+    clip: rect(75px, 350px, 148px, 30px);
+  }
+  15% {
+    clip: rect(49px, 350px, 29px, 30px);
+  }
+  20% {
+    clip: rect(28px, 350px, 138px, 30px);
+  }
+  25% {
+    clip: rect(53px, 350px, 18px, 30px);
+  }
+  30% {
+    clip: rect(71px, 350px, 58px, 30px);
+  }
+  35% {
+    clip: rect(104px, 350px, 42px, 30px);
+  }
+  40% {
+    clip: rect(92px, 350px, 83px, 30px);
+  }
+  45% {
+    clip: rect(79px, 350px, 84px, 30px);
+  }
+  50% {
+    clip: rect(147px, 350px, 19px, 30px);
+  }
+  55% {
+    clip: rect(116px, 350px, 115px, 30px);
+  }
+  60% {
+    clip: rect(15px, 350px, 18px, 30px);
+  }
+  65% {
+    clip: rect(73px, 350px, 60px, 30px);
+  }
+  70% {
+    clip: rect(121px, 350px, 7px, 30px);
+  }
+  75% {
+    clip: rect(101px, 350px, 78px, 30px);
+  }
+  80% {
+    clip: rect(115px, 350px, 46px, 30px);
+  }
+  85% {
+    clip: rect(112px, 350px, 69px, 30px);
+  }
+  90% {
+    clip: rect(122px, 350px, 70px, 30px);
+  }
+  95% {
+    clip: rect(19px, 350px, 119px, 30px);
+  }
+  100% {
+    clip: rect(7px, 350px, 27px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(139px, 350px, 8px, 30px);
+  }
+  5% {
+    clip: rect(100px, 350px, 128px, 30px);
+  }
+  10% {
+    clip: rect(123px, 350px, 122px, 30px);
+  }
+  15% {
+    clip: rect(122px, 350px, 113px, 30px);
+  }
+  20% {
+    clip: rect(38px, 350px, 52px, 30px);
+  }
+  25% {
+    clip: rect(134px, 350px, 114px, 30px);
+  }
+  30% {
+    clip: rect(98px, 350px, 71px, 30px);
+  }
+  35% {
+    clip: rect(69px, 350px, 28px, 30px);
+  }
+  40% {
+    clip: rect(69px, 350px, 15px, 30px);
+  }
+  45% {
+    clip: rect(57px, 350px, 102px, 30px);
+  }
+  50% {
+    clip: rect(121px, 350px, 73px, 30px);
+  }
+  55% {
+    clip: rect(124px, 350px, 103px, 30px);
+  }
+  60% {
+    clip: rect(2px, 350px, 136px, 30px);
+  }
+  65% {
+    clip: rect(71px, 350px, 75px, 30px);
+  }
+  70% {
+    clip: rect(16px, 350px, 40px, 30px);
+  }
+  75% {
+    clip: rect(40px, 350px, 127px, 30px);
+  }
+  80% {
+    clip: rect(43px, 350px, 80px, 30px);
+  }
+  85% {
+    clip: rect(132px, 350px, 4px, 30px);
+  }
+  90% {
+    clip: rect(110px, 350px, 106px, 30px);
+  }
+  95% {
+    clip: rect(115px, 350px, 49px, 30px);
+  }
+  100% {
+    clip: rect(74px, 350px, 122px, 30px);
+  }
+}
+
+
+@font-face {
+  font-family: Ardenstine;
+  src: url("./assets/fonts/ardestine-webfont.woff")
+}
+
+
+.about-2 {
+  background-color:#212121;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start
+}
+
+.about-image1 {
+  height: 100vh;
+  width: 40vw;
+}
+
+.about-text1 {
+  width: 58vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+
+.text2 {
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  /* text-align: left; */
+  line-height: 1.4;
+  font-size: 14px;
+  width: 40vw;
+}
+
+.about1 {
+  width: 58vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-music {
+  position: relative;
+  height: 100vh;
+}
+
+.new-music h1.div-title {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: aliceblue
+}
+
+.new-music div.music-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-music img.art {
+  width: 50vw;
+  height: 100vh;
+}
+
+.music-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  background-color: black
+}
+
+.music-div h1.title {
+  font-family: Ardenstine;
+  font-size: 80px;
+  color: aliceblue;
+  text-align: left;
+}
+
+.music-div p.metadata {
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  text-align: left;
+}
+
+.icons {
+  /* margin: 50px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons1 {
+  /* margin: 50px; */
+  display: flex;
+  flex-direction: row;
+}
+#icon {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#icon1 {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.options {
+  cursor: pointer;
+  background: #66BB6A;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.options-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.options1 {
+  cursor: pointer;
+  background: #66BB6A;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.options1-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.options-text:hover {
+  color:#81D4FA
+}
+
+.options-icon {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.options1-text:hover {
+  color:#81D4FA
+}
+a {
+  color: black
+}
+
+a:link, a:visited {
+  color: none;
+  text-decoration: none;
+  outline: none;
+}
+
+a:active, a:hover {
+  color: none;
+  text-decoration: none;
+  outline: none
+}
+
+a:link:active, a:visited:active {
+  text-decoration: none;
+  color: none;
+  outline: none
+}
+
+.options3 {
+  cursor: pointer;
+  background:#FFEB3B;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.options3-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.options3-text:hover {
+  color:#880E4F
+}
+
+.news-view {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.news1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: 1000;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.news2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.news3 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.news2-view {
+  background: #000;
+  width: 35%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.booking {
+  margin-top: 10%;
+  height: 70vh;
+  width: 100%;
+  background: #212121;
+  position: relative;
+}
+
+.booking p.text {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+  font-weight: 100
+}
+.booking p.text2 {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px
+}
+.booking-div {
+  position: absolute;
+  width: 70%;
+}
+
+.booking a.link {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.booking p.link-text {
+  color: #66BB6A;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 100
+}
+
+.booking p.link-text1 {
+  color: #66BB6A;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 100
+}
+
+.booking p.dev-text {
+  color: crimson;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: 100
+}
+
+#green-section {
+  position: relative
+}
+
+.spotify-image {
+  width: 250px;
+  height: 260px; 
+  margin-bottom: 30px
+}
+
+/* small mobile : 320px */
+@media screen and (max-width: 767px) {
+  .container-view {
+    visibility: hidden;
+    width: 20%
+  }
+
+  #menu-overlay {
+    opacity: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+    background-image: url("./assets/images/lite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column
+  }
+  .overlay-link {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #66BB6A;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .overlay-link1 {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .overlay-album {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center
+  }
+
+  .container-view2 {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center
+  }
+
+  .menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
     color: aliceblue;
+    font-size: 40px;
+  }
+  .cgang {
+    font-size: 25px;
+  }
+  .new-music div.music-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .new-music {
+    height: initial;
+  }
+
+  .new-music img.art {
+    width: 100%;
+    height: 60vh
+  }
+
+  .new-music div.music-div {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .new-music h1.title {
+    font-size: 40px;
+    text-align: center
+  }
+
+  
+
+  #video-container {
+    height: 30vh;
+    margin-bottom: 50px
+  }
+  #play-video {
+    position: relative;
+    top: 100px;
+    width: 50px;
+    height: 50px
+  }
+
+  .video {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  .about-1 {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .about-image1 {
+    width: 100%;
+    height: 70vh
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .text2 {
+    width: 90%;
+    margin: 10px;
+    line-height: 2
+  }
+
+  .text1 {
+    width: 90%;
+    margin: 10px;
+    line-height: 2
+  }
+
+  .about-2 {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about1 {
+    width: 100%
+  }
+  .spotify-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: initial
+  }
+
+  .spotify-image {
+    width: 90%;
+    height: 40vh
+  }
+
+  .play-1 {
+    margin: 10px;
+  }
+
+  .play-2 {
+    margin: 10px
+  }
+
+  .play-3 {
+    margin: 10px;
+  }
+
+  .play-4 {
+    margin: 10px;
+  }
+
+  .booking {
+    height: 50vh
+  }
+  .booking-div {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .booking p.text {
+    font-size: 20px;
+    font-weight: 100
+
+  }
+  .booking p.text2 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .booking p.link-text {
+    font-size: 20px;
+    font-weight: 100
+  }
+  
+  .booking p.dev-text {
+    font-size: 12px;
+    font-weight: 100
+  }
+
+  .news2{
+    font-size: 8px;
+  }
+
+  .news2-view {
+    width: 75%;
+    height: 2vh
+  }
+
+  .news1 {
+    font-size: 30px;
+  }
+
+  .news3 {
+    font-size: 10px;
+  }
+
+  .news-container{
+    margin-left: 10px;
+    height: 10vh
+  }
 }
