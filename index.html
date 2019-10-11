@@ -4,6 +4,8 @@
         <title>CGANG | Official Website</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <meta name="viewport" content="height=device-height">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -43,6 +45,8 @@
             }
 
             window.addEventListener("load", event => {
+              screen.lockOrientation("portrait")
+              screen.orientation.lock()
               document.getElementById("menu").addEventListener("click", openMenu)
               document.getElementById("close-menu").addEventListener("click", closeMenu)
               document.getElementById("overlay-link").addEventListener("click", closeMenu)
@@ -72,7 +76,7 @@
           </span>
           <ul>
             <li class="nav-item">
-              <a class="link" href="musicnvideos.html">MUSIC + VIDEOS</a>
+              <a class="link" href="#video-container">MUSIC + VIDEOS</a>
             </li>
             <li class="nav-item">
               <a class="link" href="#about">ABOUT</a>
