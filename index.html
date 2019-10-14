@@ -27,6 +27,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
             function on() {
               document.getElementById("overlay").style.display = "block";
@@ -45,29 +46,41 @@
             }
 
             window.addEventListener("load", event => {
-              // document.getElementById("menu").addEventListener("click", openMenu)
-              // document.getElementById("close-menu").addEventListener("click", closeMenu)
-              // document.getElementById("overlay-link").addEventListener("click", closeMenu)
-              // document.getElementById("overlay-link1").addEventListener("click", closeMenu)
-              // document.getElementById("overlay-link2").addEventListener("click", closeMenu)
-              // document.getElementById("overlay-link3").addEventListener("click", closeMenu)
-              // document.getElementById("overlay-link4").addEventListener("click", closeMenu)
-              // document.getElementById("close").addEventListener("click", off)
-              // document.getElementById("play-video").addEventListener("click", on);
+              document.getElementById("menu").addEventListener("click", openMenu)
+              document.getElementById("close-menu").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link2").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link3").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link4").addEventListener("click", closeMenu)
+              document.getElementById("close").addEventListener("click", off)
+              document.getElementById("play-video").addEventListener("click", on);
 
               document.getElementById("menu").addEventListener("touchstart", openMenu)
               document.getElementById("close-menu").addEventListener("touchstart", closeMenu)
               document.getElementById("overlay-link").addEventListener("touchstart", closeMenu)
-              document.getElementById("overlay-link1").addEventListener("touchstart", closeMenu)
-              document.getElementById("overlay-link2").addEventListener("touchstart", closeMenu)
-              document.getElementById("overlay-link3").addEventListener("touchstart", closeMenu)
-              document.getElementById("overlay-link4").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("touchstart", function() {
+                window.location = "#video-container"
+                closeMenu
+              })
+              document.getElementById("overlay-link2").addEventListener("touchstart", function() {
+                window.location = "index.html#about"
+                closeMenu
+              })
+              document.getElementById("overlay-link3").addEventListener("touchstart", function() {
+                window.location = "index.html#artists"
+                closeMenu
+              })
+              document.getElementById("overlay-link4").addEventListener("touchstart", function() {
+                window.location = "index.html#booking"
+                closeMenu
+              })
               document.getElementById("close").addEventListener("touchstart", off)
               document.getElementById("play-video").addEventListener("touchstart", on);
             })
             
             // $(document).ready(function() {
-            //   $('menu').on('click touchstart', openMenu)
+            //   $('menu').click(openMenu)
             //   $('close-menu').on('click touchstart', closeMenu)
             //   $('overlay-link').on('click touchstart', closeMenu)
             //   $('overlay-link1').on('click touchstart', closeMenu)
@@ -132,7 +145,7 @@
               <a id="overlay-link" href="https://fanlink.to/GREEN">
                 <p class="overlay-link">Buy Now</p>
               </a>
-              <a id="overlay-link1" href="#">
+              <a id="overlay-link1" href="#video-container">
                 <p class="overlay-link1">Music + Videos</p>
               </a>
               <a id="overlay-link2" href="#about">
@@ -437,7 +450,7 @@
               <p class="link-text">Click Here</p>
               <i class="fa fa-long-arrow-right options-icon" style="margin-top: 6px; color: #66BB6A"></i>
             </a>
-            <p class="link-text1 offset-md-1">Email: cypaq23@gmail.com</p>
+            <p class="link-text1 offset-md-1">Email: Bookcypaq@gmail.com</p>
             <hr class="offset-md-1" style="border-top: dotted 4px" />
             <p class="dev-text offset-md-1" >Developed by t.o.y.Labs</p>
             <span class="icons1 offset-md-1">

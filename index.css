@@ -549,13 +549,13 @@ ul {
   font-family: Ardenstine;
   font-size: 80px;
   color: aliceblue;
-  text-align: left;
+  text-align: center;
 }
 
 .music-div p.metadata {
   font-family: 'Courier New', Courier, monospace;
   color: aliceblue;
-  text-align: left;
+  text-align: center;
 }
 
 .icons {
