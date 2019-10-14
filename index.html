@@ -1,5 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+  body {width: 300px}
+  .container-view {
+    visibility: hidden;
+    width: 20%
+  }
+
+  #menu-overlay {
+    opacity: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+    background-image: url("./assets/images/lite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column
+  }
+  .overlay-link {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #66BB6A;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .overlay-link1 {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .overlay-album {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center
+  }
+
+  .container-view2 {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    visibility: visible;
+  }
+
+  .menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: aliceblue;
+    font-size: 40px;
+  }
+  .cgang {
+    font-size: 25px;
+  }
+  .new-music div.music-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .new-music {
+    height: initial;
+  }
+
+  .new-music img.art {
+    width: 100%;
+    height: 60vh
+  }
+
+  .new-music div.music-div {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .new-music h1.title {
+    font-size: 40px;
+    text-align: center
+  }
+
+  
+
+  #video-container {
+    height: 30vh;
+    margin-bottom: 50px
+  }
+  #play-video {
+    position: relative;
+    top: 100px;
+    width: 50px;
+    height: 50px
+  }
+
+  .video {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  .about-1 {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .about-image1 {
+    width: 100%;
+    height: 70vh
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .text2 {
+    width: 90%;
+    margin: 10px;
+    line-height: 2
+  }
+
+  .text1 {
+    width: 90%;
+    margin: 10px;
+    line-height: 2
+  }
+
+  .about-2 {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about1 {
+    width: 100%
+  }
+  .spotify-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: initial
+  }
+
+  .spotify-image {
+    width: 90%;
+    height: 40vh
+  }
+
+  .play-1 {
+    margin: 10px;
+  }
+
+  .play-2 {
+    margin: 10px
+  }
+
+  .play-3 {
+    margin: 10px;
+  }
+
+  .play-4 {
+    margin: 10px;
+  }
+
+  .booking {
+    height: 50vh
+  }
+  .booking-div {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .booking p.text {
+    font-size: 20px;
+    font-weight: 100
+
+  }
+  .booking p.text2 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .booking p.link-text {
+    font-size: 20px;
+    font-weight: 100
+  }
+  
+  .booking p.dev-text {
+    font-size: 12px;
+    font-weight: 100
+  }
+
+  .news2{
+    font-size: 8px;
+  }
+
+  .news2-view {
+    width: 75%;
+    height: 2vh
+  }
+
+  .news1 {
+    font-size: 30px;
+  }
+
+  .news3 {
+    font-size: 10px;
+  }
+
+  .news-container{
+    margin-left: 10px;
+    height: 10vh
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 850px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+  </style>
     <head>
         <title>CGANG | Official Website</title>
         <meta charset="utf-8">
