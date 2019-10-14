@@ -1,5 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    body {width: 300px}
     .container-view {
       visibility: hidden;
       width: 20%
