@@ -45,17 +45,38 @@
             }
 
             window.addEventListener("load", event => {
-              document.getElementById("menu").addEventListener("click", openMenu)
-              document.getElementById("close-menu").addEventListener("click", closeMenu)
-              document.getElementById("overlay-link").addEventListener("click", closeMenu)
-              document.getElementById("overlay-link1").addEventListener("click", closeMenu)
-              document.getElementById("overlay-link2").addEventListener("click", closeMenu)
-              document.getElementById("overlay-link3").addEventListener("click", closeMenu)
-              document.getElementById("overlay-link4").addEventListener("click", closeMenu)
-              document.getElementById("close").addEventListener("click", off)
-              document.getElementById("play-video").addEventListener("click", on);
+              // document.getElementById("menu").addEventListener("click", openMenu)
+              // document.getElementById("close-menu").addEventListener("click", closeMenu)
+              // document.getElementById("overlay-link").addEventListener("click", closeMenu)
+              // document.getElementById("overlay-link1").addEventListener("click", closeMenu)
+              // document.getElementById("overlay-link2").addEventListener("click", closeMenu)
+              // document.getElementById("overlay-link3").addEventListener("click", closeMenu)
+              // document.getElementById("overlay-link4").addEventListener("click", closeMenu)
+              // document.getElementById("close").addEventListener("click", off)
+              // document.getElementById("play-video").addEventListener("click", on);
+
+              document.getElementById("menu").addEventListener("touchstart", openMenu)
+              document.getElementById("close-menu").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link2").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link3").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link4").addEventListener("touchstart", closeMenu)
+              document.getElementById("close").addEventListener("touchstart", off)
+              document.getElementById("play-video").addEventListener("touchstart", on);
             })
             
+            // $(document).ready(function() {
+            //   $('menu').on('click touchstart', openMenu)
+            //   $('close-menu').on('click touchstart', closeMenu)
+            //   $('overlay-link').on('click touchstart', closeMenu)
+            //   $('overlay-link1').on('click touchstart', closeMenu)
+            //   $('overlay-link2').on('click touchstart', closeMenu)
+            //   $('overlay-link3').on('click touchstart', closeMenu)
+            //   $('overlay-link4').on('click touchstart', closeMenu)
+            //   $('close').on('click touchstart', off)
+            //   $('play-video').on('click touchstart', on)
+            // })
             function playVideo() {
               var video = document.getElementById("myVideo")
               video.setAttribute("autoplay", true)
