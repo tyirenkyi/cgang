@@ -786,8 +786,13 @@ a:link:active, a:visited:active {
   margin-bottom: 30px
 }
 
+.container-view2 {
+  visibility: hidden;
+}
+
 /* small mobile : 320px */
-@media screen and (min-width: 320px)and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  body {width: 300px}
   .container-view {
     visibility: hidden;
     width: 20%
@@ -842,7 +847,8 @@ a:link:active, a:visited:active {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center
+    justify-content: center;
+    visibility: visible;
   }
 
   .menu {
