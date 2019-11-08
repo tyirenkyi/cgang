@@ -42,6 +42,19 @@ body {
   margin-bottom: 50px;
 }
 
+.container-view-music{
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.navBar-music{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
 li {
   list-style-type: none;
   margin-left: 20px;
@@ -121,6 +134,40 @@ ul {
   cursor: pointer;
 }
 
+#play-video1 {
+  position: absolute; 
+  top: 300px;
+  cursor: pointer;
+  left: 320px;
+  font-size: 100px;
+  color: #616161
+}
+
+.music1 {
+  width: 50%
+}
+
+.music2 {
+  width: 50%
+}
+
+.music1:hover #play-video1 {
+  color: #fff
+} 
+
+.music2:hover #play-video2 {
+  color: #D50000;
+}
+
+#play-video2 {
+  font-size: 100px;
+  position: absolute; 
+  top: 300px;
+  right: 320px;
+  cursor: pointer;
+  color: #fff
+}
+
 #overlay {
   position: fixed; 
   display: none; 
@@ -165,6 +212,16 @@ ul {
   position: relative;
 }
 
+.spotify-div-music {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  top: 120px;
+}
+
 .play-1{
   display: flex;
   flex-direction: column;
@@ -173,8 +230,13 @@ ul {
 .play-2 {
   display: flex;
   flex-direction: column;
+  margin-right: 150px;
+  margin-left: 250px;
 }
 
+.musicVideos {
+  background-color: #000;
+}
 .play-3 {
   display: flex;
   flex-direction: column;
@@ -717,7 +779,7 @@ a:link:active, a:visited:active {
 
 .news2-view {
   background: #000;
-  width: 35%;
+  width: 20%;
   height: 5vh;
   display: flex;
   justify-content: flex-start;
@@ -789,8 +851,43 @@ a:link:active, a:visited:active {
   margin-bottom: 30px
 }
 
+.spotify-image1 {
+  width: 320px;
+  height: 320px; 
+  margin-bottom: 30px
+}
+
 .container-view2 {
   visibility: hidden;
 }
 
 /* small mobile : 320px */
+
+.youtube {
+  margin-top: 80vh;
+  flex-direction: column;
+}
+
+.video1{
+
+}
+
+.video2{
+  margin-top: 50px
+}
+
+.video3{
+
+}
+
+.video4{
+
+}
+
+.video5{
+
+}
+
+.video6{
+
+}

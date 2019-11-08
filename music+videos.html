@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
+        <title>CGANG | MUSIC+VIDEOS</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <!-- <meta name="viewport" content="height=device-height"> -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            function on() {
+              document.getElementById("overlay").style.display = "block";
+            }
+
+            function off() {
+              document.getElementById("overlay").style.display = "none";
+            } 
+
+            function openMenu() {
+              document.getElementById("menu-overlay").style.display = "block";
+            }
+
+            function closeMenu() {
+              document.getElementById("menu-overlay").style.display = "none";
+            }
+
+            window.addEventListener("load", event => {
+              document.getElementById("menu").addEventListener("click", openMenu)
+              document.getElementById("close-menu").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link2").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link3").addEventListener("click", closeMenu)
+              document.getElementById("overlay-link4").addEventListener("click", closeMenu)
+              document.getElementById("close").addEventListener("click", off)
+              document.getElementById("play-video").addEventListener("click", on);
+
+              document.getElementById("menu").addEventListener("touchstart", openMenu)
+              document.getElementById("close-menu").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link").addEventListener("touchstart", closeMenu)
+              document.getElementById("overlay-link1").addEventListener("touchstart", function() {
+                window.location = "#video-container"
+                closeMenu
+              })
+              document.getElementById("overlay-link2").addEventListener("touchstart", function() {
+                window.location = "index.html#about"
+                closeMenu
+              })
+              document.getElementById("overlay-link3").addEventListener("touchstart", function() {
+                window.location = "index.html#artists"
+                closeMenu
+              })
+              document.getElementById("overlay-link4").addEventListener("touchstart", function() {
+                window.location = "index.html#booking"
+                closeMenu
+              })
+              document.getElementById("close").addEventListener("touchstart", off)
+              document.getElementById("play-video").addEventListener("touchstart", on);
+            })
+            
+            // $(document).ready(function() {
+            //   $('menu').click(openMenu)
+            //   $('close-menu').on('click touchstart', closeMenu)
+            //   $('overlay-link').on('click touchstart', closeMenu)
+            //   $('overlay-link1').on('click touchstart', closeMenu)
+            //   $('overlay-link2').on('click touchstart', closeMenu)
+            //   $('overlay-link3').on('click touchstart', closeMenu)
+            //   $('overlay-link4').on('click touchstart', closeMenu)
+            //   $('close').on('click touchstart', off)
+            //   $('play-video').on('click touchstart', on)
+            // })
+            function playVideo() {
+              var video = document.getElementById("myVideo")
+              video.setAttribute("autoplay", true)
+            }
+
+        </script>
+    </head>
+    
+    <body class="musicVideos">
+        <div class="container-view-music">
+            <div class="navBar-music">
+                <span class="col-md-3 offset-md-0">
+                <p class="cgang">Christian Gang</p>
+                </span>
+                <ul>
+                <li class="nav-item">
+                    <a class="link" href="music+videos.html" target="_blank">MUSIC + VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#artists">ARTISTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#booking">BOOKING</a>
+                </li>
+                </ul>
+                <span class="nav-item album">
+                <a class="album-text" href="#green-section">GREEN</a>
+                </span>
+            </div>
+        </div>
+    
+        <div class="container-view2">
+            <span class="">
+                <p class="cgang">Christian Gang</p>
+            </span>
+            <i 
+                id="menu"
+                class="fa fa-bars menu">
+            </i>
+            <div id="menu-overlay">
+                <span 
+                style="width: 100%;
+                    display: flex;
+                    justify-content: center;">
+                <i id="close-menu" class="fa fa-close menu1"></i>
+                <span class="menu-items">
+                    <p class="overlay-album">Green</p>
+                    <a id="overlay-link" href="https://fanlink.to/GREEN">
+                    <p class="overlay-link">Buy Now</p>
+                    </a>
+                    <a id="overlay-link1" href="music+videos.html" target="_blank">
+                    <p class="overlay-link1">Music + Videos</p>
+                    </a>
+                    <a id="overlay-link2" href="#about">
+                    <p class="overlay-link1">About</p>
+                    </a>
+                    <a id="overlay-link3" href="#artists">
+                    <p class="overlay-link1">Artists</p>
+                    </a>
+                    <a id="overlay-link4" href="#booking">
+                    <p class="overlay-link1">Booking</p>
+                    </a>
+                </span>
+                </span>
+                
+            </div>
+        </div>
+        <div class="spotify-div-music offset-md-2">
+            <span class="play-1">
+                <img 
+                    class="spotify-image1"
+                    id="complete-playlist"
+                    src="assets/images/cyril.jpg"
+                />
+                <iframe
+                    class="iframe" 
+                    width="300" 
+                    height="380" 
+                    scrolling="no" 
+                    frameborder="no" 
+                    allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/916899910&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                </iframe>
+            </span>
+            <span class=play-2>
+                <img 
+                    class="spotify-image1"
+                    id="complete-playlist"
+                    src="assets/images/cyril.jpg"
+                />
+                <iframe 
+                    src="https://open.spotify.com/embed/playlist/44ZNFjs6rQmYoldApVJ4vw" 
+                    width="300" 
+                    height="380" 
+                    frameborder="0" 
+                    allowtransparency="true" 
+                    allow="encrypted-media">
+                </iframe>
+            </span>
+        </div>
+        <div class="youtube offset-md-1">
+            <span class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i8IodlKEmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            <span class="video3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LAxgnEYfqrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            <span class="video4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OWdkA-M09P4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            <span class="video5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VzpclTcDevE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </span>
+            <span class="video6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vOS8R5iI5CU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+        </div>
+        <footer>
+            <section id="booking" class="booking">
+                <div class="booking-div">
+                <p class="text offset-md-1">
+                    For booking information
+                </p>
+                <p class="text2 offset-md-1">
+                    follow the link below
+                </p>
+                <a class="link offset-md-1" href="tel:0245428756" target="_parent">
+                    <p class="link-text">Click Here</p>
+                    <i class="fa fa-long-arrow-right options-icon" style="margin-top: 6px; color: #66BB6A"></i>
+                </a>
+                <p class="link-text1 offset-md-1">Email: Bookcypaq@gmail.com</p>
+                <hr class="offset-md-1" style="border-top: dotted 4px" />
+                <p class="dev-text offset-md-1" >Developed by t.o.y.Labs</p>
+                <span class="icons1 offset-md-1">
+                    <a href="https://soundcloud.com/cgangstuff" target="_blank">
+                    <i class="fa fa-soundcloud" style="color: #FF3D00" id="icon1"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCS8TntnISiud4e-MUJpt79w" target="_blank">
+                    <i class="fa fa-youtube" style="color: crimson" id="icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cgangstuff/" target="_blank">
+                    <i class="fa fa-instagram" style="color: #D500F9" id="icon"></i>
+                    </a>
+                    <a href="https://twitter.com/CGangstuff" target="_blank">
+                    <i class="fa fa-twitter" style="color:#1976D2" id="icon"></i>
+                    </a>
+                </span>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

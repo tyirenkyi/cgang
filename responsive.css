@@ -3,7 +3,33 @@
       visibility: hidden;
       width: 20%
     }
+
+    .container-view-music{
+      visibility: hidden;
+      width: 20%
+    }
   
+    .spotify-div-music {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      height: initial;
+      width: 100vw;
+      align-items: center;
+    }
+    
+    iframe {
+      width: 80vw;
+      height: 30vh;
+    }
+
+    .youtube {
+      display: flex;
+      margin-top: 200vh;
+      width: 100vw;
+      align-items: center;
+    }
+
     #menu-overlay {
       opacity: 10;
       position: fixed;
@@ -56,6 +82,7 @@
       align-content: center;
       justify-content: center;
       visibility: visible;
+      height: 100px;
     }
   
     .menu {
