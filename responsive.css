@@ -84,6 +84,10 @@
       visibility: visible;
       height: 100px;
     }
+
+    .music-videos {
+      background-color: #000;
+    }
   
     .menu {
       position: absolute;
@@ -113,7 +117,7 @@
     }
   
     .new-music img.art {
-      width: 100%;
+      width: 100vw;
       height: 60vh
     }
   
@@ -139,7 +143,25 @@
       width: 50px;
       height: 50px
     }
+
+    #play-video1 {
+      position: absolute; 
+      top: 200px;
+      cursor: pointer;
+      left: 50vw;
+      font-size: 50px;
+      color: #fff
+    }
   
+    #play-video2 {
+      position: absolute; 
+      top: 90vh;
+      cursor: pointer;
+      left: 50vw;
+      font-size: 50px;
+      color: #D50000
+    }
+
     .video {
       width: 90vw;
       height: 35vh;
